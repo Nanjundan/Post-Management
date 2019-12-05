@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #415366;
+}
+.displayFlex{
+    display: flex;
+}
+.flexColumn{
+    flex-direction: column;
+}
+.justifySpaceBetween{
+    justify-content: space-between;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+.textOverflowEllipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hyperLink{
+    color: #3277d8;
+    cursor: pointer;
+    border: none;
+    background-color: transparent !important;
+}
+.disabled{
+    pointer-events: none;
+    background-color: gray !important;
+}
+.bold{
+    font-weight: bold;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.marginAll10{
+    margin: 10px;
+}
+.marginTopBottom10{
+    margin: 10px 0px;
+}
+.paddingAll10{
+    padding: 10px;
+}
+.paddingTopBottom10{
+    padding: 10px 0px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}

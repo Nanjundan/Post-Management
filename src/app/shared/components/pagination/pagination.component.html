@@ -1,0 +1,4 @@
+<section class="pagination">
+  <button [ngClass]="{'disabled': (currentPage === 0)}" (click)="changePage('prev')"> Previous </button>
+  <button [ngClass]="{'disabled': isNextAvailable}" (click)="changePage('next')"> Next </button>
+</section>

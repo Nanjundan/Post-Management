@@ -1,0 +1,10 @@
+.posts > div{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+.comments > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+}

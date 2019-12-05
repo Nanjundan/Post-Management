@@ -1,0 +1,26 @@
+<section class="post marginAll10">
+    <span class="displayFlex justifySpaceBetween alignItemsCenter">
+        <h4> {{user.name}} </h4>
+        <img src="assets/delete.png" class="icon" (click)="deletePost()">
+    </span>
+    <div>
+        <span class="displayFlex flexColumn">
+            <label class="bold"> Title: </label>
+            <span> {{post.title}} </span>
+        </span>
+        <span> {{post.body}} </span>
+    </div>
+    <!-- Comments section -->
+    <section class="comments marginTopBottom10">
+        <div class="paddingAll10">
+            <span class="bold"> Comments </span>
+            <span class="cursorPointer" (click)="toggleComments()"> {{showComments ? 'Hide Comments' : 'Show Comments'}} </span>
+        </div>
+        <div *ngIf="showComments" class="displayFlex flexColumn">
+            <div *ngFor="let comment of comments" class="displayFlex flexColumn marginTopBottom10">
+                <span class="bold"> {{comment.email}}: </span>
+                <span> {{comment.body}} </span>
+            </div>
+        </div>
+    </section>
+</section>

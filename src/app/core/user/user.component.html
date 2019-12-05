@@ -1,0 +1,7 @@
+<section class="posts">
+    <h4 class="marginAll10"> {{user.name}} </h4>
+    <div *ngFor="let post of posts; let i = index" class="cursorPointer" (click)="goToPost(i)">
+        {{post.title}}
+    </div>
+</section>
+<app-pagination [currentPage]="pageNumber" [isNextAvailable]="isNextAvailable" (pageChanged)="changePage($event)"> </app-pagination>

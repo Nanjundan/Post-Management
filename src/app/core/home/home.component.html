@@ -1,0 +1,8 @@
+<h2 class="marginAll10"> Post Management</h2>
+<section class="users" *ngIf="users">
+    <div *ngFor="let user of users; let i = index" (click)="selectUser(i)">
+        <span class="textOverflowEllipsis" title="{{user.name}}"> {{user.name}} </span>
+        <span class="textOverflowEllipsis" title="{{user.company}}"> {{user.company | companyName}} </span>
+        <span class="hyperLink"> Blog Posts </span>
+    </div>
+</section>
